@@ -433,7 +433,7 @@ local function BlatantCastFishingRod()
         print("✅ Blatant Cast: Method 2 successful")
         return false
     end
-    
+end
 
 
 -- =============================================================================
