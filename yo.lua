@@ -110,7 +110,7 @@ local WindUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/Footag
 task.spawn(function()
     task.wait(1) -- Tunggu sebentar agar UI siap
     WindUI:Popup({
-        Title = "TES NOTIF 999!",
+        Title = "TES NOTIF wkwkkwkw!",
         Icon = "fish",
         Content = "Thank you for using Anggazyy Hub - Fish It Automation\n\nScript ini 100% Gratis dan tidak diperjualbelikan",
         Buttons = {
@@ -419,29 +419,16 @@ local function BlatantCastMethod3()
 end
 
 -- Main blatant casting function yang mencoba semua method
+-- Main blatant casting function yang hanya menggunakan method 2
 local function BlatantCastFishingRod()
-    -- Coba method 1: RequestChargeFishingRod dengan bypass
-    local success = BlatantCastMethod1()
-    if success then
-        print("✅ Blatant Cast: Method 1 successful")
-        return true
-    end
-    
     -- Coba method 2: Direct server call
-    success = BlatantCastMethod2()
+    local success = BlatantCastMethod2()
     if success then
         print("✅ Blatant Cast: Method 2 successful")
         return true
     end
     
-    -- Coba method 3: SendFishingRequestToServer langsung
-    success = BlatantCastMethod3()
-    if success then
-        print("✅ Blatant Cast: Method 3 successful")
-        return true
-    end
-    
-    print("❌ Blatant Cast: All methods failed")
+    print("❌ Blatant Cast: Method 2 failed")
     return false
 end
 
